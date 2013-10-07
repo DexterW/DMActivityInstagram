@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65D60133-C831-44AD-888F-4EB4E4E70797</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DMActivityInstagram</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EE6AF4B9-7EDA-4CF5-BB7A-57DCC48A0343</key>
+		<string>ssh://github.com/DexterW/DMActivityInstagram.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DMActivityInstagram.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EE6AF4B9-7EDA-4CF5-BB7A-57DCC48A0343</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/DexterW/DMActivityInstagram.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EE6AF4B9-7EDA-4CF5-BB7A-57DCC48A0343</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE6AF4B9-7EDA-4CF5-BB7A-57DCC48A0343</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DMActivityInstagram</string>
+		</dict>
+	</array>
+</dict>
+</plist>

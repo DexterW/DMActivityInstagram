@@ -33,6 +33,12 @@
             if ([self imageIsLargeEnough:(UIImage *)item]) return YES; // has image, of sufficient size.
             else NSLog(@"DMActivityInstagam: image too small %@",item);
         }
+        else if ([item isKindOfClass:[NSURL class]]) {
+            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:(NSURL *)item]];
+            if ([self imageIsLargeEnough:image]) {
+                return YES;
+            }
+        }
     }
     return NO;
 }
@@ -44,9 +50,8 @@
             self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),item]; // concat, with space if already exists.
         }
         else if ([item isKindOfClass:[NSURL class]]) {
-          if (self.includeURL) {
-            self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),[(NSURL *)item absoluteString]]; // concat, with space if already exists.
-          }
+            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:(NSURL *)item]];
+            [self setShareImage:image];
         }
         else NSLog(@"Unknown item type %@", item);
     }

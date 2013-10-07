@@ -9,7 +9,7 @@
 #import "DMResizerViewController.h"
 
 
-@interface DMResizerViewController () {
+@interface DMResizerViewController () <DMColorPickerDelegate> {
     CGFloat rotation;
 }
 @end
@@ -28,6 +28,10 @@
     
     
     return self;
+}
+
+-(BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -50,6 +54,7 @@
 {
     [super viewDidLoad];
     
+    self.colorPicker.delegate = self;
     self.colorPicker.colors = [self.delegate backgroundColors];
     
     
